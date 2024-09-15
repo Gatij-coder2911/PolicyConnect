@@ -1,0 +1,159 @@
+.contain{
+    display: flex;
+
+}
+.sidebar{
+    width: 18%;
+    height: 50vh;
+    background-color: #E5D5C0;
+    border-radius: 20px;
+   
+    margin: 30px;
+}
+.sidebar h1{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.listbtn{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+}
+.mainbar::-webkit-scrollbar-v {
+    display: none;
+  }
+.mainbar{
+    background-color: #E5D5C0;
+    width: 50%;
+    height: 80vh;
+    overflow-y: scroll;
+    
+    font-size: 15px;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-left: 10%;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.roundedbar{
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+
+.round{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #e7b36f;
+    border-radius: 100px;
+    text-align: center;
+}
+.h3{
+    font-size: 15px;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.input1{
+    width: 100%;
+    height: 120px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.input11{
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.twooption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Table{
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #E5D5C0;
+}
+.List{
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 40%;
+    background-color: #D9D9D9;
+}
+.input2{
+    width: 31%;
+    height: 120px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dd9f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }

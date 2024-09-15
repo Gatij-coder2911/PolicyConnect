@@ -1,0 +1,378 @@
+.contain{
+    display: flex;
+
+}
+.sidebar1{
+    width: 90%;
+    height: 35vh;
+    background-color: #E5D5C0;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+   
+}
+.sidebar2{
+    width:90%;
+    height: 41vh;
+    background-color: #E5D5C0;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+   
+    
+}
+.sidebar3{
+    width:15%;
+    height: 80vh;
+    background-color: #E5D5C0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 30px;
+    margin-right: 30px;
+   
+    
+}
+.sidebar1 h1{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.sidebar2 h1{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.sidebar3 h1{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.listbtn{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+}
+
+.mainbarFeed{
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 80vh;
+    overflow-y: scroll;
+    
+    font-size: 15px;
+    padding-right: 3%;
+    
+    padding-top: 10px;
+    padding-left: 3%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+
+}
+.explaination p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Select{
+    font-size: 15px;
+    margin-left: 10px;
+ 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.summary{
+    height: fit-content;
+    width: 90%;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
+}
+
+.roundedbar{
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+
+.round{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #dfa65c;
+    border-radius: 100px;
+    text-align: center;
+}
+.round1{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    text-align: center;
+}
+.round2{
+    min-width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+}
+.h3{
+    font-size: 15px;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.input1{
+    width: 100%;
+    height: 120px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.input11{
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.twooption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Table{
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #D9D9D9;
+}
+.List{
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 40%;
+    background-color: #D9D9D9;
+}
+.input2{
+    width: 31%;
+    height: 120px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+.createpost{
+    background-color: #E5D5C0;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    height: 70px;
+}
+.userphoto{
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    border-radius: 200px;
+}
+.userphoto1{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+}
+.searchbar{
+    height: 50px;
+    width: 68%;
+    
+    border-radius: 200px;
+    background-color: #FFFFFF;
+}
+.post{
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.policypost{
+    background-color: #E5D5C0;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    align-items:left;
+    justify-content: start;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 20px;
+
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.policypost h1{
+    font-weight: 600;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+.policypost p{
+    font-size: 12px;
+    padding-right: 10px;
+
+}
+.pdfpreview{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    padding: 20px;
+    height: 350px;
+    text-align: center;
+}
+.pdfpreview h1{
+    font-weight: 600;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    color: blue;
+}
+.pdfpreview h2{
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+}
+.likedislikecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.like{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-right: 10px;
+
+}
+.dislike{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-right: 10px;
+
+}
+.Comment{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 13px;
+
+}
+.addcomment{
+    background-color: #BBBBBB;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 10px;
+    
+    border-radius: 200px;
+    font-size: 20px;
+    display: flex;
+    gap: 6px;
+   
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+.searchbar1{
+    background-color: #D9D9D9;
+    height: 40px;
+    border-radius: 100px;
+    width: 68%;
+
+}
+.AddComment{
+    background-color: #D9D9D9;
+    height: fit-content;
+    border-radius: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.commentsection p{
+    padding-right: 10px;
+}
+.commentsection{
+    margin-top: 20px;
+}
+.leaderlist{
+    
+    background-color: #dbc09e;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 31px;
+
+}

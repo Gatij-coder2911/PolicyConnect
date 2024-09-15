@@ -2,11 +2,17 @@ from flask import Flask, jsonify, request, redirect, render_template
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
 
-# from decimal import Decimal
+from datetime import datetime
 from transformers import pipeline
+from google.generativeai import GenerativeModel
+import google.generativeai as genai
+
+
 from datetime import datetime
 
+
 import mysql.connector
+genai.configure(api_key="AIzaSyCGYJm4vvSR7crEOmddYBnibeQSb3AKXkk")
 
 # Create Flask app and specify template folder (pointing directly to frontend)
 app = Flask(__name__, template_folder='../frontend')
@@ -21,7 +27,7 @@ session = {}
 mycon = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="gatij",
+  password="pabbo123",
   database="govt"
 )
 
@@ -388,6 +394,7 @@ def recent_policies():
         return jsonify({'message': 'You are not logged in', 'task': 'redirect the user to /api/login'}), 401
 
 ###########Ranked Algo code 
+# sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 # sentiment_analyzer = ""
 
@@ -653,8 +660,42 @@ def get_user_policies():
     else:
         return jsonify({'message': 'You are not logged in', 'task': 'redirect the user to /api/login'}), 401
 
+@app.route('/api/summarize_policy', methods=['POST'])
+def summarize_policy():
+    if 'user_id' in session:
+        data = request.get_json()
+        title = data.get('title')
+        description = data.get('description')
+        details = data.get('details')
+        ministry_name = data.get('ministry_name')
+        department_name = data.get('department_name')
+        department_description = data.get('department_description')
+        summary_length = data.get('summary_length', 150)
 
+        if not all([title, description, details, ministry_name, department_name, department_description]):
+            return jsonify({"message": "Policy information is incomplete"}), 400
 
+        prompt = f"""Summarize this policy concisely in {summary_length} characters or less:
+
+Title: {title}
+Ministry: {ministry_name}
+Department: {department_name}
+Department Description: {department_description}
+Description: {description}
+Details: {details}"""
+
+        model = GenerativeModel('gemini-1.5-pro')
+
+        response = model.generate_content(prompt)
+        summary = response.text[:summary_length]
+
+        return jsonify({
+            "message": "Policy summary generated successfully",
+            "title": title,
+            "summary": summary
+        }), 200
+    else:
+        return jsonify({'message': 'Authentication required', 'action': 'Please log in'}), 401
 
 if __name__ == '__main__':
     app.run(debug=True)
